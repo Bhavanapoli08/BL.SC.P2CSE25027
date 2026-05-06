@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Notification System</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Notification System</h1>
+
+    <div class="form-container">
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Title"
+      >
+
+      <input
+        type="text"
+        id="message"
+        placeholder="Message"
+      >
+
+      <select id="type">
+
+        <option value="Placement">
+          Placement
+        </option>
+
+        <option value="Result">
+          Result
+        </option>
+
+        <option value="Event">
+          Event
+        </option>
+
+      </select>
+
+      <button onclick="createNotification()">
+        Add Notification
+      </button>
+
+    </div>
+
+    <h2>All Notifications</h2>
+
+    <div id="notifications"></div>
+
+    <h2>Priority Inbox</h2>
+
+    <div id="priorityNotifications"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
